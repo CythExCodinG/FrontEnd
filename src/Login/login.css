@@ -4,7 +4,7 @@
     
 }
 body{
-    background: url(./coverPage.webp);
+    background: url(/public/assets/login/loginbg.webp);
     background-position: absoulte;
     background-size: cover;
     
