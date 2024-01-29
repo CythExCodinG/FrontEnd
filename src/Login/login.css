@@ -1,71 +1,89 @@
-* {
-  margin: 0%;
-  padding: 0%;
+.bglogin {
+  background: url(/public/assets/home/2.jpg);
 }
-body {
-  background: url(/public/assets/login/loginbg.webp);
-  background-position: absoulte;
+
+.bgsignup {
+  background: url(/public/assets/home/3.jpg);
+}
+
+.wrapper {
   background-size: cover;
-  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-size: large;
 }
+
 .form-box {
-  width: 350px;
-  box-shadow: 0 0 10px 0 #000;
-  margin: 100px auto 0;
+  position: relative;
+  width: 420px;
+  height: 500px;
   padding: 50px 5px;
-  background-color: snow;
+  background-color: #ffff;
   border-radius: 10px;
-  
 }
 input {
   width: 100%;
   height: 40px;
-  border-radius: 80px;
+  border-radius: 10px;
   outline: none;
-  padding: 23px;
-  border: 1px solid;
+  padding: 25px;
+  border: 2px solid #a1a1aa;
+  font-size: 20px;
   background: transparent;
 }
 button {
   padding: 14px 20px;
   margin: 5px 30px;
-  border-radius: 30px;
+  border-radius: 10px;
+  width: 150px;
   border: none;
   font-size: 18;
+  font-weight: 600;
   cursor: pointer;
   justify-content: center;
   white-space: nowrap;
   color: white;
-  background: rgb(218, 98, 98);
+  background: #f87171;
 }
+
 button:hover {
   transition: 0.5;
-  background: rgb(39, 35, 35);
+  background: #ef4444;
 }
+
 .input-group {
-  margin: 20 30;
+  margin: 20px 30px;
   position: relative;
 }
+
 label {
   position: absolute;
-  top: -9px;
-  left: 20px;
-  background-color: snow;
-  padding: 0 6px;
+  top: -16px;
+  left: 16px;
+  background-color: #fff;
+  padding: 0px 6px;
 }
-h4 {
+
+.title {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
   text-align: center;
   width: 200px;
-  margin: -80 auto 30px;
-  padding-top: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 40px;
   box-shadow: 0 0 10px 0 black;
-  background: white;
-  border-radius: 30px;
-  
+  border-radius: 40px;
+  background-color: #fff;
 }
+
+h4 {
+  padding: 10px;
+}
+
 p {
   text-align: center;
   margin-top: 10px;
@@ -78,7 +96,22 @@ p {
 .social {
   text-align: center;
 }
-.text {
-  margin-left: 20px;
+
+.terms {
   margin-top: 20px;
+  cursor: pointer;
+  width: 15px;
+}
+.member {
+  margin: 30px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 30px;
+}
+
+.check {
+  margin-right: 10px;
 }

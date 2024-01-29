@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <title>Anime Aura</title>
     <link rel="icon" type="image/x-icon" href="/public/assets/home/logo.png" />
+    <link rel="stylesheet" href="../../main.css" />
     <link rel="stylesheet" href="home.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-    </style>
   </head>
 
   <body>
+    <!-- navbar  -->
     <nav class="navBar">
       <div class="topnavbar">
+        <!-- style="background-image: url(../../public/assets/home/bglogo.jpg)" -->
         <div class="buttonCont">
-          <button id="men" class="gender men">MAN</button>
-          <button id="women" class="gender women">WOMEN</button>
+          <button onclick="onButtonChange('men')" id="men" class="gender">
+            MAN
+          </button>
+          <button onclick="onButtonChange('women')" id="women" class="gender">
+            WOMEN
+          </button>
         </div>
       </div>
 
@@ -24,7 +28,7 @@
           <img
             src="/public/assets/home/logo.gif"
             alt="logo"
-            style="width: 110px; height: 100px"
+            style="width: 80px; height: 80px; scale: 2"
           />
         </div>
 
@@ -40,49 +44,60 @@
           </div>
         </div>
       </div>
+
+      <img src="../../public/assets/home/loginbg.webp" alt="" />
     </nav>
 
-    <div class="random">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sunt
-      totam hic odit fugiat, repudiandae aut earum nisi quaerat ullam. Quasi
-      numquam natus praesentium doloremque veritatis laborum eaque ipsam
-      reprehenderit nulla aspernatur, excepturi quod in. Pariatur, earum
-      eligendi deleniti soluta velit vero aliquid temporibus exercitationem
-      inventore minima quam rem voluptatibus iure cumque mollitia incidunt quod,
-      repudiandae praesentium perspiciatis voluptatum saepe recusandae at.
-      Fugiat molestias rerum id at impedit, deserunt corporis ratione quae
-      quidem cupiditate harum perspiciatis, recusandae facere! Quam accusamus
-      fugiat delectus accusantium, perferendis placeat voluptatum sunt natus
-      iusto amet est aspernatur soluta sit numquam consectetur quibusdam,
-      voluptas ad sapiente!
-    </div>
-    <div class="random">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sunt
-      totam hic odit fugiat, repudiandae aut earum nisi quaerat ullam. Quasi
-      numquam natus praesentium doloremque veritatis laborum eaque ipsam
-      reprehenderit nulla aspernatur, excepturi quod in. Pariatur, earum
-      eligendi deleniti soluta velit vero aliquid temporibus exercitationem
-      inventore minima quam rem voluptatibus iure cumque mollitia incidunt quod,
-      repudiandae praesentium perspiciatis voluptatum saepe recusandae at.
-      Fugiat molestias rerum id at impedit, deserunt corporis ratione quae
-      quidem cupiditate harum perspiciatis, recusandae facere! Quam accusamus
-      fugiat delectus accusantium, perferendis placeat voluptatum sunt natus
-      iusto amet est aspernatur soluta sit numquam consectetur quibusdam,
-      voluptas ad sapiente!
-    </div>
-    <div class="random">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sunt
-      totam hic odit fugiat, repudiandae aut earum nisi quaerat ullam. Quasi
-      numquam natus praesentium doloremque veritatis laborum eaque ipsam
-      reprehenderit nulla aspernatur, excepturi quod in. Pariatur, earum
-      eligendi deleniti soluta velit vero aliquid temporibus exercitationem
-      inventore minima quam rem voluptatibus iure cumque mollitia incidunt quod,
-      repudiandae praesentium perspiciatis voluptatum saepe recusandae at.
-      Fugiat molestias rerum id at impedit, deserunt corporis ratione quae
-      quidem cupiditate harum perspiciatis, recusandae facere! Quam accusamus
-      fugiat delectus accusantium, perferendis placeat voluptatum sunt natus
-      iusto amet est aspernatur soluta sit numquam consectetur quibusdam,
-      voluptas ad sapiente!
+    <!-- carousel container relative to all of them -->
+    <div class="carousel">
+      <div class="list">
+        <div class="item">
+          <img src="../../public/assets/slider/1.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="../../public/assets/slider/2.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="../../public/assets/slider/3.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="../../public/assets/slider/4.jpg" alt="" />
+        </div>
+
+        <div class="item">
+          <img src="../../public/assets/slider/5.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="../../public/assets/slider/6.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="../../public/assets/slider/7.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="../../public/assets/slider/8.png" alt="" />
+        </div>
+      </div>
+
+      <!-- thumnail -->
+      <div class="thumbnail">
+        <img src="../../public/assets/slider/2.jpg" alt="" class="item" />
+        <img src="../../public/assets/slider/3.png" alt="" class="item" />
+        <img src="../../public/assets/slider/4.jpg" alt="" class="item" />
+        <img src="../../public/assets/slider/5.png" alt="" class="item" />
+        <img src="../../public/assets/slider/6.jpg" alt="" class="item" />
+        <img src="../../public/assets/slider/7.png" alt="" class="item" />
+        <img src="../../public/assets/slider/8.png" alt="" class="item" />
+        <img src="../../public/assets/slider/1.png" alt="" class="item" />
+      </div>
+
+      <!-- animation timer -->
+      <div class="timer"></div>
+
+      <!-- arrows for slider -->
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
     </div>
 
     <script src="./home.js"></script>

@@ -1,40 +1,39 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/src/Login/login.css" />
+  </head>
+  <title>Login</title>
 
-<head>Login Page
-    <link rel="stylesheet" href="/src/Login/login.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">">
-</head>
-<title>
-    Login form design
-</title>
-
-<body>
-    <div class="form-box">
-        <h4>LOGIN WITH ANIME AURAS</h4>
+  <body>
+    <div class="wrapper bglogin">
+      <div class="form-box poppins-medium">
+        <div class="title">
+          <h4>Login</h4>
+        </div>
 
         <form>
-            <div class="input-group">
-                <label>Username</label>
-                <input type="text" placeholder="enter your email" required>
-            </div>
-            <div class="input-group">
-                <label>Password</label>
-                <input type="password" placeholder="enter password" required>
-            </div>
-            <button type="submit">PROCEED &#10132;</button>
+          <div class="input-group">
+            <label>Username</label>
+            <input type="text" placeholder="enter your email" required />
+          </div>
+          <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="enter password" required />
+          </div>
+          <button type="submit">PROCEED &#10132;</button>
         </form>
         <p>Login with social media account</p>
         <div class="social">
-            <img src="/public/assets/login/facebook.png"><img src="/public/assets/login/google.png" >
+          <img src="/public/assets/login/facebook.png" /><img
+            src="/public/assets/login/google.png"
+          />
         </div>
-        <div class="text">Dont have an account?<a href="/src/Login/register.html">register here</a></label></div>
+        <div class="member">
+          Dont have an account ?
+          <a href="/src/Login/register.html">Register here</a>
+        </div>
+      </div>
     </div>
-
-
-</body>
-
+  </body>
 </html>
