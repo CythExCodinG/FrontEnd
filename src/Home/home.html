@@ -5,6 +5,7 @@
     <title>Anime Aura</title>
     <link rel="icon" type="image/x-icon" href="/public/assets/home/logo.png" />
     <link rel="stylesheet" href="../../main.css" />
+    <link rel="stylesheet" href="../../tailwind.css" />
     <link rel="stylesheet" href="home.css" />
   </head>
 
@@ -13,7 +14,7 @@
     <nav class="navBar">
       <div class="topnavbar">
         <!-- style="background-image: url(../../public/assets/home/bglogo.jpg)" -->
-        <div class="buttonCont">
+        <div class="category">
           <button onclick="onButtonChange('men')" id="men" class="gender">
             MAN
           </button>
@@ -28,17 +29,14 @@
           <img
             src="/public/assets/home/logo.gif"
             alt="logo"
-            style="width: 80px; height: 80px; scale: 2"
+            style="width: 80px; height: 60px; scale: 2; margin-left: 50px"
           />
         </div>
 
         <div class="navLink">
           <div class="link">
-            <a href="">Home</a>
-            <a href="">About</a>
-          </div>
-
-          <div class="iconLink">
+            <a class="active" href="#">Home</a>
+            <a href="#">About</a>
             <a href="#"><ion-icon name="person-outline" /></a>
             <a href="#"><ion-icon name="bag-outline" /></a>
           </div>
@@ -48,57 +46,55 @@
       <img src="../../public/assets/home/loginbg.webp" alt="" />
     </nav>
 
-    <!-- carousel container relative to all of them -->
-    <div class="carousel">
-      <div class="list">
-        <div class="item">
-          <img src="../../public/assets/slider/1.png" alt="" />
-        </div>
-        <div class="item">
-          <img src="../../public/assets/slider/2.jpg" alt="" />
-        </div>
-        <div class="item">
-          <img src="../../public/assets/slider/3.png" alt="" />
-        </div>
-        <div class="item">
-          <img src="../../public/assets/slider/4.jpg" alt="" />
+    <main class="bg-primary-color">
+      <!-- carousel container relative to all of them -->
+      <div class="carousel">
+        <div class="list">
+          <div class="item">
+            <img src="../../public/assets/slider/1.webp" alt="" />
+          </div>
+          <div class="item">
+            <img src="../../public/assets/slider/2.webp" alt="" />
+          </div>
+          <div class="item">
+            <img src="../../public/assets/slider/3.webp" alt="" />
+          </div>
+          <div class="item">
+            <img src="../../public/assets/slider/4.webp" alt="" />
+          </div>
+
+          <div class="item">
+            <img src="../../public/assets/slider/5.webp" alt="" />
+          </div>
+          <div class="item">
+            <img src="../../public/assets/slider/6.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="../../public/assets/slider/7.png" alt="" />
+          </div>
         </div>
 
-        <div class="item">
-          <img src="../../public/assets/slider/5.png" alt="" />
+        <!-- thumnail -->
+        <div class="thumbnail">
+          <img src="../../public/assets/slider/2.webp" alt="" class="item" />
+          <img src="../../public/assets/slider/3.webp" alt="" class="item" />
+          <img src="../../public/assets/slider/4.webp" alt="" class="item" />
+          <img src="../../public/assets/slider/5.webp" alt="" class="item" />
+          <img src="../../public/assets/slider/6.png" alt="" class="item" />
+          <img src="../../public/assets/slider/7.png" alt="" class="item" />
+          <img src="../../public/assets/slider/1.webp" alt="" class="item" />
         </div>
-        <div class="item">
-          <img src="../../public/assets/slider/6.jpg" alt="" />
-        </div>
-        <div class="item">
-          <img src="../../public/assets/slider/7.png" alt="" />
-        </div>
-        <div class="item">
-          <img src="../../public/assets/slider/8.png" alt="" />
+
+        <!-- animation timer -->
+        <div class="timer"></div>
+
+        <!-- arrows for slider -->
+        <div class="arrows">
+          <button id="prev"><</button>
+          <button id="next">></button>
         </div>
       </div>
-
-      <!-- thumnail -->
-      <div class="thumbnail">
-        <img src="../../public/assets/slider/2.jpg" alt="" class="item" />
-        <img src="../../public/assets/slider/3.png" alt="" class="item" />
-        <img src="../../public/assets/slider/4.jpg" alt="" class="item" />
-        <img src="../../public/assets/slider/5.png" alt="" class="item" />
-        <img src="../../public/assets/slider/6.jpg" alt="" class="item" />
-        <img src="../../public/assets/slider/7.png" alt="" class="item" />
-        <img src="../../public/assets/slider/8.png" alt="" class="item" />
-        <img src="../../public/assets/slider/1.png" alt="" class="item" />
-      </div>
-
-      <!-- animation timer -->
-      <div class="timer"></div>
-
-      <!-- arrows for slider -->
-      <div class="arrows">
-        <button id="prev"><</button>
-        <button id="next">></button>
-      </div>
-    </div>
+    </main>
 
     <script src="./home.js"></script>
     <script

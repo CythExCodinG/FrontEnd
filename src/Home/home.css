@@ -1,4 +1,4 @@
-.navBar {
+/* .navBar {
   position: relative;
 }
 
@@ -60,30 +60,43 @@
 .navLink a {
   color: inherit;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
-.link {
+.navLink a:hover,
+.navLink a.active {
+  position: relative;
+  color: #6366f1;
+}
+
+.navLink a.active::after,
+.navLink a:hover::after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  background-color: #6366f1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.navLink .link {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin-right: 40px;
-}
-
-.iconLink {
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
 ion-icon {
   width: 30px;
   height: 30px;
+} */
+
+main {
+  padding: 0 5%;
 }
 
 .carousel {
   position: relative;
-  margin: auto;
-  /* margin-top: 50px; */
-  width: 1800px;
   height: 600px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -125,19 +138,19 @@ ion-icon {
   position: absolute;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   z-index: 10;
   width: 300px;
-  bottom: 20%;
+  bottom: 15%;
   left: 60%;
 }
 
 .arrows button {
   width: 60px;
-  height: 70px;
+  height: 60px;
   cursor: pointer;
-  border-radius: 20%;
-  background-color: #eee4;
+  border-radius: 50%;
+  background-color: rgba(187, 184, 184, 0.6);
   border: none;
   font-family: monospace;
   color: #fff;
@@ -237,6 +250,7 @@ ion-icon {
   pointer-events: none;
 }
 
+/* progress bar below carousel */
 .timer {
   position: absolute;
   z-index: 100;
@@ -244,7 +258,7 @@ ion-icon {
   left: 0;
   width: 0%;
   height: 5px;
-  background-color: #f87171;
+  background-color: #8b5cf6;
 }
 
 .carousel .timer.progress {

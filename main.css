@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .poppins-light {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -37,4 +41,101 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.navBar {
+  position: relative;
+}
+
+.navBar > img {
+  position: absolute;
+  z-index: -10;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0px -320px;
+}
+
+.category {
+  display: flex;
+  width: fit-content;
+}
+
+.gender {
+  padding: 2px;
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+  color: azure;
+  border: 0px;
+  border-bottom: 5px solid transparent;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.topnavbar {
+  padding: 0px 5%;
+  height: 40px;
+}
+
+.bottomnavbar {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  height: 90px;
+  padding: 0% 5%;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  font-weight: 600;
+  color: rgb(72, 66, 66);
+}
+
+.navLink a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.navLink a:hover,
+.navLink a.active {
+  position: relative;
+  color: #6366f1;
+}
+
+.navLink a.active::after,
+.navLink a:hover::after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  background-color: #6366f1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.navLink .link {
+  display: flex;
+  gap: 25px;
+}
+
+ion-icon {
+  width: 30px;
+  height: 30px;
 }
