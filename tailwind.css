@@ -604,20 +604,16 @@ video {
   display: flex;
 }
 
+.table{
+  display: table;
+}
+
 .h-12{
   height: 3rem;
 }
 
 .w-16{
   width: 4rem;
-}
-
-.w-2\/5{
-  width: 40%;
-}
-
-.w-3\/5{
-  width: 60%;
 }
 
 .w-56{
@@ -737,19 +733,14 @@ video {
   padding-right: 5%;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .text-center{
@@ -885,8 +876,9 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0px -320px;
-     object-position: 0px -320px;
+  /* object-position: 0px -280px; */
+  /* object-position: center; */
+  /* object-position: 0px -320px; */
 }
 
 .category {
@@ -903,7 +895,7 @@ body {
   color: azure;
   border: 0px;
   border-bottom: 5px solid transparent;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   font-family: "Poppins", sans-serif;
@@ -927,10 +919,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 5%;
-  /* background-color: rgba(0, 0, 0, 0.7); */
   background-color: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .navLink {
@@ -981,36 +972,12 @@ ion-icon {
 }
 
 @media (min-width: 768px){
-  .md\:w-3\/5{
-    width: 60%;
-  }
-
-  .md\:w-3\/4{
-    width: 75%;
-  }
-
-  .md\:w-2\/5{
-    width: 40%;
-  }
-
-  .md\:flex-row{
-    flex-direction: row;
-  }
-
   .md\:p-10{
     padding: 2.5rem;
   }
 }
 
 @media (min-width: 1024px){
-  .lg\:w-3\/5{
-    width: 60%;
-  }
-
-  .lg\:w-1\/5{
-    width: 20%;
-  }
-
   .lg\:w-3\/12{
     width: 25%;
   }
