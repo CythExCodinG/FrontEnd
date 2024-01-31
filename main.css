@@ -55,7 +55,9 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 0px -320px;
+  /* object-position: 0px -280px; */
+  /* object-position: center; */
+  /* object-position: 0px -320px; */
 }
 
 .category {
@@ -71,7 +73,7 @@ body {
   color: azure;
   border: 0px;
   border-bottom: 5px solid transparent;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   font-family: "Poppins", sans-serif;
   font-size: larger;
@@ -94,9 +96,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 5%;
-  /* background-color: rgba(0, 0, 0, 0.7); */
   background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
 .navLink {

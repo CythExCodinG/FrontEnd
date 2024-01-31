@@ -12,3 +12,4 @@ function onSizeChange(size) {
   newSizeDom.classList.add('bg-lime-200', 'text-gray-800', 'text-xl');
   sizeSeleted = size;
 }
+
