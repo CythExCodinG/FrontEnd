@@ -18,8 +18,8 @@
 
 .form-box {
   position: relative;
-  width: 420px;
-  height: 500px;
+  width: 360px;
+  height: 400px;
   padding: 50px 5px;
   background-color: #ffff;
   border-radius: 10px;
@@ -103,7 +103,8 @@ p {
   width: 15px;
 }
 .member {
-  margin: 30px;
+  margin: 10px;
+  margin-left: 30px;
 }
 
 .checkbox-container {
