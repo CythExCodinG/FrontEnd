@@ -22,8 +22,8 @@ function createProductTemplate(product) {
   return `
   <div class="pro-card w-[290px] h-[400px] bg-slate-200 p-3 rounded-md">
     <img
-      class="h-[290px] rounded-3xl w-full shadow-lg shadow-gray-400"
-      src="/public/assets/product/m1.webp"
+      class="h-[290px] rounded-3xl w-full shadow-lg shadow-gray-400 object-cover"
+      src=${product.imageUrl}
       alt="pro1"
     />
 
