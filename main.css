@@ -1,8 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  * {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  html,
+  body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    background-color: #09090b;
+  }
+
+  .delay-2000 {
+    animation-delay: 2000ms;
+  }
+
+  .delay-5000 {
+    animation-delay: 5000ms;
+  }
+
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
 
 .poppins-light {
   font-family: "Poppins", sans-serif;
@@ -43,22 +78,6 @@ body {
   font-style: normal;
 }
 
-.navBar {
-  position: relative;
-}
-
-.navBar > img {
-  position: absolute;
-  z-index: -10;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* object-position: 0px -280px; */
-  /* object-position: center; */
-  /* object-position: 0px -320px; */
-}
 
 .category {
   display: flex;
@@ -66,6 +85,7 @@ body {
 }
 
 .gender {
+  z-index: 30;
   padding: 2px;
   width: 140px;
   height: 40px;
@@ -80,10 +100,7 @@ body {
   font-weight: 600;
 }
 
-.topnavbar {
-  padding: 0px 5%;
-  height: 40px;
-}
+
 
 .bottomnavbar {
   position: sticky;
@@ -105,7 +122,6 @@ body {
   align-items: center;
   font-size: larger;
   font-weight: 600;
-  color: rgb(72, 66, 66);
 }
 
 .navLink a {
@@ -117,7 +133,7 @@ body {
 .navLink a:hover,
 .navLink a.active {
   position: relative;
-  color: #6366f1;
+  color: #a3e635;
 }
 
 .navLink a.active::after,
@@ -125,7 +141,7 @@ body {
   content: "";
   width: 70%;
   height: 2px;
-  background-color: #6366f1;
+  background-color: #a3e635;
   position: absolute;
   bottom: 0px;
   left: 0px;
