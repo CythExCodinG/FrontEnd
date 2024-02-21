@@ -140,16 +140,20 @@
 
   
   /*cart*/
-  h1{
+  .checkout{
     margin: 40px 40px;
-  }
+    color: white;
+    font-size:100px;
+
+  } 
   .container{
     display: flex;
     align-items: center; 
     position: relative;
     border-radius: 10px ;
-    box-shadow: 2px 5px 8px rgba(1, 1, 1, 1);
-  background: transparent;
+    box-shadow: 5px 5px 8px rgb(180, 5, 5);
+  background: white;
+color:black;
     width: 480px;
     height: 230px;
   padding: 20px;
@@ -194,10 +198,12 @@
   align-items: center; 
     display: flex;
     justify-content: center;
-    position: sticky;
+    position: absolute;
     border-radius: 10px ;
-    /* box-shadow: 2px 5px 8px rgba(1, 1, 1, 1); */
-  background: transparent;
+    background-color: #f7ecec;
+    color: rgb(61, 12, 99);
+    box-shadow: 5px 5px 8px rgb(180, 5, 5);
+  background: white;
     width: 280px;
     height: 230px;
   padding: 20px;

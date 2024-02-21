@@ -1,56 +1,63 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="UTF-8" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <title>Anime Aura</title>
     <link rel="icon" type="image/x-icon" href="/public/assets/home/logo.png" />
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="stylesheet" href="cart.css" />
-
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-    </style>
+    <link rel="stylesheet" href="../../main.css" />
+    <link rel="stylesheet" href="../../tailwind.css" />
+    
+    <link rel="stylesheet" href="cart.css">
   </head>
 
   <body>
-    <nav class="navBar">
-      <div class="topnavbar"></div>
-
-      <div class="bottomnavbar">
-        <div class="logo">
-          <img
-            src="/public/assets/home/logo.gif"
-            alt="logo"
-            style="width: 80px; height: 60px; scale: 2; margin-left: 50px"
-          />
-        </div>
-
-        <div class="navLink">
-          <div class="link">
-            <a href="/src/Home/home.html">Home</a>
-            <a href="#">About</a>
-            <a href="#"><ion-icon name="person-outline" /></a>
-            <a href="#"><ion-icon name="bag-outline" /></a>
-            
-          </div>
+    <!-- navbar  -->
+    <nav class="navBar px-[5%]">
+      <div class="topnavbar">
+        <div class="category">
+          <button onclick="onButtonChange('men')" id="men" class="gender">
+            MAN
+          </button>
+          <button onclick="onButtonChange('women')" id="women" class="gender">
+            WOMEN
+          </button>
         </div>
       </div>
 
-      <img src="../../public/assets/home/loginbg.webp" alt="" />
-    </nav>
+      <div class="flex items-center justify-between my-4">
+        <div class="relative cursor-pointer bg-transparent z-10 text-white">
+          <div
+            class="relative flex flex-col justify-center z-10 pb-1 pr-3 font-noto font-semibold text-2xl border-b-4 border-r-4 rounded-xl"
+          >
+            <h1>Anime</h1>
+            <h1 class="text-secondary">. Aura</h1>
+          </div>
 
-    <main class="text-gray-50 bg-primary-color px-[5%] py-16">
-      <div
-        class="product flex flex-col items-center space-y-6 lg:flex-row lg:space-y-0 justify-around"
-      >
+          <div class="blob absolute top-0 left-0">
+            <div
+              class="absolute blur-xl top-0 -left-10 w-12 h-12 mix-blend-multiply bg-teal-500 opacity-80 rounded-full animate-blob delay-0"
+            ></div>
+            <div
+              class="absolute blur-xl top-0 left-20 w-12 h-12 mix-blend-multiply bg-gray-200 opacity-80 rounded-full animate-blob delay-5000"
+            ></div>
+            <div
+              class="absolute blur-xl top-10 left-5 w-12 h-12 mix-blend-multiply bg-secondary opacity-90 rounded-full animate-blob delay-2000"
+            ></div>
+          </div>
+        </div>
 
-          <div class="iconLink">
-            <a href="/src/Home/home.html"><ion-icon name="person-outline" /></a>
+        <div class="navLink text-dimWhite">
+          <div class="link">
+            <a class="active" href="/src/Home/home.html">Home</a>
+            <a href="#">About</a>
+            <a href="/src/Login/login.html"><ion-icon name="person-outline" /></a>
             <a href="/src/Login/cart.html"><ion-icon name="bag-outline" /></a>
           </div>
         </div>
       </div>
     </nav>
-    <h1>CHECKOUT</h1>
+    <h1>
+      <div class="checkout">CHECKOUT</div></h1>
     <div class="container">
       <div class="order-summary-img"><img src="/public/assets/product/1.webp"></div>
 
@@ -71,6 +78,8 @@
             <div class="order-total-amount">Rs799</div>
           </div>
         </div>
+        
+        
      
       <div class="total-amount">
         <div class="total-amount-title">Total Amount</div><br>
@@ -78,8 +87,11 @@
         <button class="place-order">PLACE ORDER &#10132;</a></button>
       </div>
       
-    </div>
+
+
+    
     <script src="./home.js"></script>
+    <script type="module" src="./productList.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -88,7 +100,5 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-  
-      
   </body>
 </html>
