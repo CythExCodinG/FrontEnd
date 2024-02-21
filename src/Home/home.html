@@ -11,7 +11,7 @@
 
   <body>
     <!-- navbar  -->
-    <nav class="navBar">
+    <nav class="navBar px-[5%]">
       <div class="topnavbar">
         <div class="category">
           <button onclick="onButtonChange('men')" id="men" class="gender">
@@ -23,16 +23,29 @@
         </div>
       </div>
 
-      <div class="bottomnavbar">
-        <div class="logo">
-          <img
-            src="/public/assets/home/logo.gif"
-            alt="logo"
-            style="width: 80px; height: 60px; scale: 2; margin-left: 50px"
-          />
+      <div class="flex items-center justify-between my-4">
+        <div class="relative cursor-pointer bg-transparent z-10 text-white">
+          <div
+            class="relative flex flex-col justify-center z-10 pb-1 pr-3 font-noto font-semibold text-2xl border-b-4 border-r-4 rounded-xl"
+          >
+            <h1>Anime</h1>
+            <h1 class="text-secondary">. Aura</h1>
+          </div>
+
+          <div class="blob absolute top-0 left-0">
+            <div
+              class="absolute blur-xl top-0 -left-10 w-12 h-12 mix-blend-multiply bg-teal-500 opacity-80 rounded-full animate-blob delay-0"
+            ></div>
+            <div
+              class="absolute blur-xl top-0 left-20 w-12 h-12 mix-blend-multiply bg-gray-200 opacity-80 rounded-full animate-blob delay-5000"
+            ></div>
+            <div
+              class="absolute blur-xl top-10 left-5 w-12 h-12 mix-blend-multiply bg-secondary opacity-90 rounded-full animate-blob delay-2000"
+            ></div>
+          </div>
         </div>
 
-        <div class="navLink">
+        <div class="navLink text-dimWhite">
           <div class="link">
             <a class="active" href="#">Home</a>
             <a href="#">About</a>
@@ -41,8 +54,6 @@
           </div>
         </div>
       </div>
-
-      <img src="../../public/assets/home/9.png" alt="" />
     </nav>
 
     <main class="bg-primary-color">
@@ -69,7 +80,10 @@
             <img src="../../public/assets/slider/6.png" alt="" />
           </div>
           <div class="item">
-            <img src="../../public/assets/slider/7.png" alt="" />
+            <img
+              src="../../public/assets/slider/Homepage_OS-FS-T-shirts-2.webp"
+              alt=""
+            />
           </div>
         </div>
 
@@ -99,8 +113,8 @@
         Men's Clothing from Anime Aura
       </h1>
 
-      <div class="pro-wrapper flex flex-wrap w-full gap-14 justify-evenly">
-        <div class="pro-card w-[290px] h-[400px] bg-slate-200 p-3 rounded-xl">
+      <div id="pro-wrapper" class="pro-wrapper flex flex-wrap w-full gap-14">
+        <div class="pro-card w-[290px] h-[400px] bg-slate-200 p-3 rounded-md">
           <img
             class="h-[290px] rounded-3xl w-full shadow-lg shadow-gray-400"
             src="/public/assets/product/m1.webp"
@@ -111,67 +125,7 @@
             <h1 class="text-gray-800 font-semibold">OverDyed Cargo Brown</h1>
             <h2 class="text-gray-500">Men Cargo Pants</h2>
             <span class="text-teal-600 text-xl font-bold"
-              ><b class="text-sky-600">Rs. </b>135</span
-            >
-          </div>
-        </div>
-        <div class="pro-card w-[290px] h-[400px] bg-slate-200 p-3 rounded-xl">
-          <img
-            class="h-[290px] rounded-3xl w-full shadow-lg shadow-gray-400"
-            src="/public/assets/product/m1.webp"
-            alt="pro1"
-          />
-
-          <div class="mt-4">
-            <h1 class="text-gray-800 font-semibold">OverDyed Cargo Brown</h1>
-            <h2 class="text-gray-500">Men Cargo Pants</h2>
-            <span class="text-teal-600 text-xl font-bold"
-              ><b class="text-sky-600">Rs. </b>135</span
-            >
-          </div>
-        </div>
-        <div class="pro-card w-[290px] h-[400px] bg-slate-200 p-3 rounded-xl">
-          <img
-            class="h-[290px] rounded-3xl w-full shadow-lg shadow-gray-400"
-            src="/public/assets/product/m1.webp"
-            alt="pro1"
-          />
-
-          <div class="mt-4">
-            <h1 class="text-gray-800 font-semibold">OverDyed Cargo Brown</h1>
-            <h2 class="text-gray-500">Men Cargo Pants</h2>
-            <span class="text-teal-600 text-xl font-bold"
-              ><b class="text-sky-600">Rs. </b>135</span
-            >
-          </div>
-        </div>
-        <div class="pro-card w-[290px] h-[400px] bg-slate-200 p-3 rounded-xl">
-          <img
-            class="h-[290px] rounded-3xl w-full shadow-lg shadow-gray-400"
-            src="/public/assets/product/m1.webp"
-            alt="pro1"
-          />
-
-          <div class="mt-4">
-            <h1 class="text-gray-800 font-semibold">OverDyed Cargo Brown</h1>
-            <h2 class="text-gray-500">Men Cargo Pants</h2>
-            <span class="text-teal-600 text-xl font-bold"
-              ><b class="text-sky-600">Rs. </b>135</span
-            >
-          </div>
-        </div>
-        <div class="pro-card w-[290px] h-[400px] bg-slate-200 p-3 rounded-xl">
-          <img
-            class="h-[290px] rounded-3xl w-full shadow-lg shadow-gray-400"
-            src="/public/assets/product/m1.webp"
-            alt="pro1"
-          />
-
-          <div class="mt-4">
-            <h1 class="text-gray-800 font-semibold">OverDyed Cargo Brown</h1>
-            <h2 class="text-gray-500">Men Cargo Pants</h2>
-            <span class="text-teal-600 text-xl font-bold"
-              ><b class="text-sky-600">Rs. </b>135</span
+              ><b class="text-gray-600">Rs. </b>135</span
             >
           </div>
         </div>
@@ -180,6 +134,7 @@
     </main>
 
     <script src="./home.js"></script>
+    <script type="module" src="./productList.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
