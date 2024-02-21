@@ -16,10 +16,18 @@
   font-size: large;
 }
 
-.form-box {
+.form-box-login {
+  position: relative;
+  width: 380px;
+  height: 400px;
+  padding: 50px 5px;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+.form-box-signup {
   position: relative;
   width: 360px;
-  height: 400px;
+  height: 480px;
   padding: 50px 5px;
   background-color: #ffff;
   border-radius: 10px;
@@ -103,10 +111,13 @@ p {
   width: 15px;
 }
 .member {
-  margin: 10px;
+  margin: 45px;
   margin-left: 30px;
 }
-
+.member-signup {
+  margin: 10px;
+  margin-left: 40px;
+}
 .checkbox-container {
   display: flex;
   align-items: center;
