@@ -16,7 +16,7 @@
   body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    background-color: #ededf3;
+    background-color: #000000;
     /* background-color: #09090b; */
   }
 
@@ -79,7 +79,6 @@ body {
   font-style: normal;
 }
 
-
 .category {
   display: flex;
   width: fit-content;
@@ -100,8 +99,6 @@ body {
   font-size: larger;
   font-weight: 600;
 }
-
-
 
 .bottomnavbar {
   position: sticky;
