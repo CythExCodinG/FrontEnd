@@ -131,18 +131,134 @@ export const menData = [
 export const womenData = [
   {
     id: 'w1',
-    title: 'Naruto: Ghost of Uchiha',
-    category: 'Oversized T-Shirts',
-    price: 799,
-    imageUrl: '/public/assets/product/m1.webp',
+    title: 'Naruto: Uzumaki',
+    category: 'Unisex Jackets',
+    price: 2999,
+    imageUrl: '/public/assets/product/w1.webp',
     productDetails: {
       material:
-        `Premium Heavy Gauge Fabric
-        100% Cotton 
+        `100% Polyester
+        Dry Clean Only`,
+      origin: 'India (and proud)',
+    }
+  },
+  {
+    id: 'w2',
+    title: 'Naruto: Gaara Of The Desert',
+    category: 'Unisex Shirt',
+    price: 1499,
+    imageUrl: '/public/assets/product/w2.webp',
+    productDetails: {
+      material:
+        `100% Rayon
         Machine Wash`,
       origin: 'India (and proud)',
     }
+  },
+  {
+    id: 'w3',
+    title: "Women's Baby Lavender Lady Hinata Graphic Printed",
+    category: 'Oversized T-Shirt',
+    price: 499,
+    imageUrl: '/public/assets/product/w3.webp',
+    productDetails: {
+      material:
+        `100% Cotton`,
+      origin: 'Polish',
+    }
+  },
+  {
+    id: 'w4',
+    title: "Printed Anime Cosplay",
+    category: 'Anime Hoodie',
+    price: 799,
+    imageUrl: '/public/assets/product/w4.avif',
+    productDetails: {
+      material:
+        `Premium Terry Cotton`,
+      origin: 'Polish',
+    }
+  },
+  {
+    id: 'w5',
+    title: "THALASI Women",
+    category: 'T-Shirt',
+    price: 799,
+    imageUrl: '/public/assets/product/w5.webp',
+    productDetails: {
+      material:
+        `100% Polyester
+        Dry Clean Only`,
+      origin: 'Polish',
+    }
+  },
+  {
+    id: 'w6',
+    title: "Jujutsu Kaisen,Poindexter",
+    category: 'Oversized T-Shirts',
+    price: 499,
+    imageUrl: '/public/assets/product/w6.webp',
+    productDetails: {
+      material:
+        `100% Rasin
+        Dry Clean Only`,
+      origin: 'GreenWitch',
+    }
+  },
+  {
+    id: 'w7',
+    title: "PRONK Nezuko Women",
+    category: 'Oversized T-Shirts',
+    price: 599,
+    imageUrl: '/public/assets/product/w7.webp',
+    productDetails: {
+      material:
+        `100% Rasin
+        Dry Clean Only`,
+      origin: 'Biserk',
+    }
+  },
+  {
+    id: 'w8',
+    title: "RodZen",
+    category: 'T-Shirts',
+    price: 899,
+    imageUrl: '/public/assets/product/w8.webp',
+    productDetails: {
+      material:
+        `10% Poly 90% Cotton
+        Dry Clean Only`,
+      origin: 'Usa',
+    }
+  },
+  {
+    id: 'w9',
+    title: "THALASI Oversized Anime",
+    category: 'Baggy T-Shirt',
+    price: 699,
+    imageUrl: '/public/assets/product/w9.webp',
+    productDetails: {
+      material:
+        `10% Linen 90% Cotton
+        Dry Clean Only`,
+      origin: 'Usa',
+    }
+  },
+  {
+    id: 'w9',
+    title: "Jujutsu Kaisen",
+    category: 'Oversized T Shirt',
+    price: 499,
+    imageUrl: '/public/assets/product/w10.webp',
+    productDetails: {
+      material:
+        `100% Cotton
+        Machine Wash`,
+      origin: 'Tokyo',
+    }
   }
+
+
 
 ];
 
