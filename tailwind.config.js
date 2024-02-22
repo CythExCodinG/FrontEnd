@@ -1,22 +1,3 @@
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-//   content: ["./src/**/*.{html,js}"],
-//   theme: {
-//     extend: {
-//       colors: {
-//         'primary-color': '#05010d',
-//         'secondary-color': 'linear-gradient(0deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,.1))',
-//       }
-//     },
-//   },
-//   plugins: [],
-// }
-
-// // rgb(9, 8, 9)
-
-// // linear - gradient(0deg, hsla(0, 0 %, 100 %, .1), hsla(0, 0 %, 100 %, .1));
-
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{html,js}"],
@@ -100,7 +81,7 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         dynapuff: ['DynaPuff', 'cursive'],
-        noto: ['Noto Sans', 'sans-serif'],
+        comfortaa: ['Comfortaa', 'sans-serif'],
       },
     },
   },
