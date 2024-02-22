@@ -1,4 +1,4 @@
-import menData from "../config/data.js";
+import menData from "../config/Mdata.js";
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -20,15 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
 // Function to create product HTML template
 function createProductTemplate(product) {
   return `
-  <div class="pro-card w-[290px] h-[400px] bg-slate-200 p-3 rounded-md">
+  <div class="pro-card w-[290px] h-[400px] bg-gray-200 p-3 rounded-md">
     <img
-      class="h-[290px] rounded-3xl w-full shadow-lg shadow-gray-400 object-cover"
+      class="h-[290px] rounded-xl w-full shadow-lg shadow-gray-400 object-cover"
       src=${product.imageUrl}
       alt="pro1"
     />
 
     <div class="mt-4">
-      <h1 class="text-gray-800 font-semibold">${product.title.length > 25 ? product.title.slice(0, 25) + '...' : product.title}</h1>
+      <h1 class="text-zinc-800 font-semibold">${product.title.length > 25 ? product.title.slice(0, 25) + '...' : product.title}</h1>
       <h2 class="text-gray-500">${product.category}</h2>
       <span class="text-teal-600 text-xl font-bold"
         ><b class="text-gray-600">Rs. </b>${product.price}</span
