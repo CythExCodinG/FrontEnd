@@ -42,7 +42,7 @@
             <a class="" href="/src/Login/login.html">
               <ion-icon name="person-outline" />
             </a>
-            <a class="active" href="/src/Login/cart.html">
+            <a class="active" href="/src/Cart/cart.html">
               <ion-icon name="bag-outline" />
             </a>
           </div>
@@ -50,7 +50,7 @@
       </div>
     </nav>
 
-    <main class="px-[5%] mt-20 font-comfortaa text-white max-w-[1700px]">
+    <main class="px-[5%] mt-24 font-comfortaa text-white max-w-[1700px]">
       <h1
         class="w-fit text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-400"
       >
@@ -110,6 +110,7 @@
         </div>
 
         <div
+          id="summary"
           class="right-cart-section flex flex-col gap-4 w-full max-w-[400px] xl:pl-[5%]"
         >
           <h1
@@ -121,7 +122,7 @@
           <div class="font-poppins font-medium text-zinc-400">
             <div class="my-2 flex items-center justify-between text-2xl">
               <span>SubTotal:</span>
-              <span>Rs. <b id="subTotal">1200</b></span>
+              <span>Rs. <b id="subTotal">0</b></span>
             </div>
             <div class="my-2 flex items-center justify-between text-2xl">
               <span>Shipping fee:</span>
@@ -135,7 +136,7 @@
             <div class="my-2 flex items-center justify-between text-3xl">
               <span>Total</span>
               <span
-                class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400"
+                class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-400"
                 >Rs. <b id="total">4000</b></span
               >
             </div>

@@ -27,28 +27,34 @@ let cartData = [
 ];
 
 var cartWrapper = document.getElementById('cart-wrapper');
+var summary = document.getElementById('summary');
 
 document.addEventListener('DOMContentLoaded', function () {
+  let totalPrice = 0;
+
   cartData.forEach((product) => {
-    console.log(product);
+    totalPrice += (product.price * product.quantity);
     const productTemplate = createProductTemplate(product);
     // Append the template to the product container
     cartWrapper.innerHTML += productTemplate;
-  })
+  });
+
+  summary.querySelector(`#subTotal`).innerHTML = totalPrice;
+  summary.querySelector(`#total`).innerHTML = totalPrice + 100;
 })
 
 
 function onQuantityChange(type, productId) {
-
-  console.log(productId);
+  var currProduct = {};
   let newCartData = [];
   if (type === 'inc') {
     newCartData = cartData.map((product) => {
-      if (product.id === productId) {
-        return {
+      if (product.id == productId) {
+        currProduct = {
           ...product,
-          quantity: product.quantity + 1,
-        }
+          quantity: product.quantity >= 1 ? product.quantity + 1 : 1,
+        };
+        return currProduct;
       }
       return product;
     })
@@ -56,10 +62,11 @@ function onQuantityChange(type, productId) {
   else {
     newCartData = cartData.map((product) => {
       if (product.id === productId) {
-        return {
+        currProduct = {
           ...product,
           quantity: product.quantity > 1 ? product.quantity - 1 : 1,
-        }
+        };
+        return currProduct;
       }
       return product;
     })
@@ -67,11 +74,12 @@ function onQuantityChange(type, productId) {
 
   cartData = newCartData;
 
-  // const productTemplate = createProductTemplate(product);
-  // // Append the template to the product container
-  console.log(cartWrapper.querySelector(`#${productId}`).querySelector('#total'));
-  // cartWrapper.querySelector(`#${productId}`).querySelector('#total').
-  console.log(cartData);
+  let totalPrice = 0;
+  cartData.forEach((product) => totalPrice += (product.price * product.quantity));
+
+  cartWrapper.querySelector(`#${productId}`).querySelector('#total').innerHTML = currProduct.quantity * currProduct.price;
+  summary.querySelector(`#subTotal`).innerHTML = totalPrice;
+  summary.querySelector(`#total`).innerHTML = totalPrice + 100;
 
 }
 
