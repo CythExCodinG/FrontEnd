@@ -37,7 +37,6 @@ womenBtn.addEventListener("click", function () {
     const productTemplate = createProductTemplate(product);
     // Append the template to the product container
     proWrapper.innerHTML += productTemplate;
-
   })
 });
 
