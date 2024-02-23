@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   summary.querySelector(`#subTotal`).innerHTML = totalPrice;
-  summary.querySelector(`#total`).innerHTML = totalPrice + 100;
+  summary.querySelector(`#total`).innerHTML = totalPrice == 0 ? 0 : totalPrice + 100;
 })
 
 
@@ -79,8 +79,27 @@ function onQuantityChange(type, productId) {
 
   cartWrapper.querySelector(`#${productId}`).querySelector('#total').innerHTML = currProduct.quantity * currProduct.price;
   summary.querySelector(`#subTotal`).innerHTML = totalPrice;
-  summary.querySelector(`#total`).innerHTML = totalPrice + 100;
+  summary.querySelector(`#total`).innerHTML = totalPrice == 0 ? 0 : totalPrice + 100;
 
+}
+
+
+function removeProduct(productId) {
+  let newCartData = [];
+  newCartData = cartData.filter((product) => product.id !== productId);
+  cartData = newCartData;
+
+  let totalPrice = 0;
+  cartWrapper.innerHTML = "";
+  cartData.forEach((product) => {
+    totalPrice += (product.price * product.quantity);
+    const productTemplate = createProductTemplate(product);
+    // Append the template to the product container
+    cartWrapper.innerHTML += productTemplate;
+  });
+
+  summary.querySelector(`#subTotal`).innerHTML = totalPrice;
+  summary.querySelector(`#total`).innerHTML = totalPrice == 0 ? 0 : totalPrice + 100;
 }
 
 
@@ -119,6 +138,9 @@ function createProductTemplate(product) {
         <b id="total" class="text-2xl md:text-3xl text-lime-500">${product.quantity * product.price}</b>
       </span>
     </div>
+    <span onclick="removeProduct('${product.id}')" class="text-sm h-full rounded-r-md hover:bg-red-600 cursor-pointer">
+      <ion-icon name="close-outline" />
+    </span>
   </div> 
   `;
 }
