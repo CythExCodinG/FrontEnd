@@ -1,11 +1,39 @@
 .bglogin {
-  background: url(/public/assets/home/2.jpg);
+  background: url(/public/assets/login/login.jpg);
 }
 
 .bgsignup {
-  background: url(/public/assets/home/3.jpg);
+  background: url(/public/assets/login/login.jpg);
 }
 
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  font-size: larger;
+}
+
+.input-group input {
+  outline: none;
+  padding: 0.8rem;
+  font-size: larger;
+  background-color: #18181b;
+  color: #e5e7eb;
+  border: 1px solid #27272a;
+  border-radius: 0.3rem;
+}
+
+.input-group input:hover,
+.input-group input:focus {
+  border-color: #818cf8;
+}
+
+/* 
 .wrapper {
   background-size: cover;
   display: flex;
@@ -16,10 +44,18 @@
   font-size: large;
 }
 
-.form-box {
+.form-box-login {
   position: relative;
-  width: 420px;
-  height: 500px;
+  width: 380px;
+  height: 400px;
+  padding: 50px 5px;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+.form-box-signup {
+  position: relative;
+  width: 360px;
+  height: 480px;
   padding: 50px 5px;
   background-color: #ffff;
   border-radius: 10px;
@@ -103,15 +139,16 @@ p {
   width: 15px;
 }
 .member {
-  margin: 30px;
+  margin: 45px;
+  margin-left: 30px;
 }
-
+.member-signup {
+  margin: 10px;
+  margin-left: 40px;
+}
 .checkbox-container {
   display: flex;
   align-items: center;
   margin: 20px 30px;
 }
-
-.check {
-  margin-right: 10px;
-}
+*/
